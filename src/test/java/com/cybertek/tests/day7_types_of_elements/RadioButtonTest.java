@@ -24,8 +24,20 @@ public class RadioButtonTest {
         System.out.println("redRadioButton.isSelected() = " + redRadioButton.isSelected());
 
         //Task verify blue is selected, red is not selected
-        Assert.assertTrue(blueRadioButton.isSelected(),"verify blue is selected");
         Assert.assertFalse(redRadioButton.isSelected(),"verify red is NOT selected");
+        Assert.assertTrue(blueRadioButton.isSelected(),"verify blue is selected");
+
+        //how to select radio button?
+        //we use click method to select radio buttons
+        redRadioButton.click();
+
+        Assert.assertTrue(redRadioButton.isSelected(),"verify red is selected");
+        Assert.assertFalse(blueRadioButton.isSelected(),"verify blue is NOT selected");
+
+
+        driver.quit();
+
+
 
 
     }
