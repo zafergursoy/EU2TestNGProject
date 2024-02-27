@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListOfElements {
@@ -33,6 +32,24 @@ public class ListOfElements {
         }
 
         //get only second button from the list
+        buttons.get(1).click();
+
+        driver.quit();
+
+
+
+    }
+
+    @Test
+    public void test2(){
+
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
+        driver.get("https://practice.cydeo.com/multiple_buttons");
+
+        List<WebElement> buttons = driver.findElements(By.tagName("sadgfsarggdsdf"));
+        System.out.println("buttons.size() = " + buttons.size());
+
+        driver.quit();
 
 
     }
