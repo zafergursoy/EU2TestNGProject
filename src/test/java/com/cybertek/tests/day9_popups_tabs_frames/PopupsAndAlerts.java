@@ -21,7 +21,6 @@ public class PopupsAndAlerts {
     public void afterMethod() throws InterruptedException {
         Thread.sleep(2000);
         driver.quit();
-
     }
 
     @Test
