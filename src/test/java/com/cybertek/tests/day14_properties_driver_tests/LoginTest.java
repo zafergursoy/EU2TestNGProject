@@ -14,6 +14,7 @@ public class LoginTest extends TestBase {
     public void test1(){
 
         driver.get(ConfigurationReader.get("url"));    // old usage -->    driver.get("https://qa1.vytrack.com");
+
         String username = ConfigurationReader.get("driver_username");
         String password = ConfigurationReader.get("driver_password");
 
