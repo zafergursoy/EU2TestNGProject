@@ -57,8 +57,8 @@ public class RepeatOptionsTests extends TestBase {
      * Open Browser
      * Login as driver
      * Go to Activities -> Calendar Events
-     * Click on create calendar events
-     * Click on repeat
+     * Click on create calendar events button
+     * Click on repeat checkbox
      * Verify that repeat options are Daily, Weekly, Monthly, Yearly(in this order)
      */
 
